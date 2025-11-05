@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+    <title>Document</title>
+    <!-- swiper css -->
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" /> -->
+    <!-- box-icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.0/css/all.css">
+
+    <!-- /box-icons -->
+    <link rel="stylesheet" href="style.css"> <!-- Link style.css-->
+    <!-- swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- custom js -->
+    <script src="js/script.js" defer></script>
+    
+    <!-- scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    
+</head>
+
+<!-- Modal -->
+<!-- <div class="modal-overlay" id="modalOverlay"></div>
+
+<div class="modal" id="portfolioModal">
+  <div class="top">
+    <div class="video">
+      <iframe id="modal-video" src="" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div class="info">
+      <div class="title">
+        <h2 id="modal-title"></h2>
+        <i class="ri-close-line close-btn"></i>
+      </div>
+      <p id="modal-description"></p>
+      <span id="modal-date"></span>
+    </div>
+  </div>
+  <div class="links">
+    <a href="#" target="_blank" id="modal-link">Acessar projeto</a>
+    <a href="#" target="_blank" id="modal-repo">Acessar repositório</a>
+    <a href="#" target="_blank" id="modal-linkedin">Ver post no LinkedIn</a>
+  </div>
+</div>  -->
+
+<div class="modal-overlay" id="modalOverlay"></div>
+
+<div class="modal" id="portfolioModal">
+  <div class="top">
+    <div class="video">
+      <iframe id="modal-video" src="" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div class="info">
+      <div class="title">
+        <h2 id="modal-title"></h2>
+        <i class="bx bx-x close-btn"></i>
+      </div>
+      <p id="modal-description"></p>
+      <span id="modal-date"></span>
+    </div>
+  </div>
+  <div class="links">
+    <a href="#" target="_blank" id="modal-link">Acessar projeto</a>
+    <a href="#" target="_blank" id="modal-repo">Acessar repositório</a>
+    <a href="#" target="_blank" id="modal-linkedin">Ver post no LinkedIn</a>
+  </div>
+</div>
+
+<body>
+    <header class="header"> <!-- Class Design header -->
+    <a href="#" class="logo">Portfolio</a> <!-- Class logo | /logo -->
+        <nav class="navbar"> <!-- Class navbar -->
+            <a href="#home" class="active" >Home</a> <!-- ID home | /home & Class active -->
+            <a href="#about">Sobre</a> <!-- ID About -->
+            <a href="#services">Cursos</a> <!-- ID Services -->
+            <a href="#portfolio">Portofólio</a> <!-- ID portfolio -->
+            <a href="#contact">Contato</a> <!-- ID contato -->
+        </nav> <!-- /navbar-->
+
+        <div class='bx bx-moon' id="darkMode-icon"></div>
+
+        <div class="bx bx-menu" id="menu-icon"></div>
+    </header> <!-- Class /Design header -->
+    
+    <section class="home" id="home"> <!-- pagina-01 -->
+        <div class="home-content"> <!-- Class home-content -->
+            <h3>Hello, I am</h3>
+            <h1>Gabriel Dias</h1>
+            <p>Profissional com vivência na área de Tecnologia da
+                Informação, focado no aprendizado contínuo e na
+                melhoria das habilidades. Tenho como objetivo enfrentar
+                desafios técnicos de forma estratégica, aliando
+                pensamento criativo e soluções inovadoras. Busco
+                sempre me aprimorar para contribuir com projetos e
+                equipes de maneira eficiente, agregando valor e
+                promovendo resultados práticos.</p>
+
+            <div class="social-media"> <!-- Class social-media -->
+                <a href="https://www.instagram.com/_dias_gabriel__/"><i class='bx bxl-instagram' ></i></a> <!-- Class bxl-instagram -->
+                <a href="https://www.linkedin.com/in/gabriel-dias-68b61422b/"><i class='bx bxl-linkedin' ></i></a> <!-- Class bxl-linkedin -->
+                <a href="https://wa.me/5524998558044" target="_blank"><i class='bx bxl-whatsapp' ></i></a> <!-- Class bxl-whatsapp -->
+            </div>
+            <a href="Currículo/Currículo-Gabriel.pdf" download="Currículo-Gabriel" class="btn">Download CV</a>  <!-- Class btn -->
+        </div> <!-- Class /home-content -->
+        <div class="profession-container"> <!-- Class profession-container -->
+            <div class="profession-box"> <!-- Class profession-box -->
+                <div class="profession" id="profession0" style="--i:0;"> <!-- Class profession -->
+                    <i class='bx bx-code-alt'></i>
+                    <h3>Web <br> Developer</h3>
+                </div> <!-- /Class profession -->
+                <div class="profession" id="profession1" style="--i:1;"> <!-- Class profession -->
+                    <i class='bx bxs-truck'></i>
+                    <h3>Logistics <br> Assistant</h3>
+                </div> <!-- /Class profession -->
+                <div class="profession" id="profession2" style="--i:2;"> <!-- Class profession -->
+                    <i class='bx bxs-keyboard'></i>
+                    <h3>Administrative <br> Assistant</h3>
+                </div> <!-- /Class profession -->
+                <div class="profession" id="profession3" style="--i:3;"> <!-- Class profession -->
+                    <i class='bx bx-cog'></i>
+                    <h3>Engineer <br> Software 4/8</h3>
+                </div> <!-- /Class profession -->
+                <div class="circle"></div> <!-- Class circle -->
+            </div> <!-- Class /profession-box -->
+
+            <div class="overlay"></div> <!-- Class overlay -->
+            <div class="home-img">
+                <img src="imagens/Img-Home.png" alt="">
+            </div> 
+        </div> <!-- /Class profession-container -->
+
+        
+
+    </section> <!-- ID /pagina-01 -->
+
+    <!-- About section design -->
+
+    <section class="about" id="about"> <!-- Class about | ID about -->
+        <div class="about-img"> <!-- Class about-img -->
+            <img src="imagens/About-img2.png" alt=""> <!-- Falta adicionar essa imagem -->
+        </div> <!-- /Class about-img -->
+
+        <div class="about-content"> <!-- Class about-content -->
+            <h2 class="heading">Sobre <span>Mim</span></h2> <!-- Class /heading -->
+            <h3>Olá, estou aqui para ajudar no seu próximo projeto!</h3>
+            <p>Sou um profissional de Tecnologia da Informação com 19 anos e 4 anos de experiência prática na área. Ao longo da minha trajetória, desenvolvi uma sólida vivência em TI, com foco em aprendizado contínuo e no aprimoramento das minhas habilidades técnicas. Tenho como objetivo enfrentar desafios de forma estratégica, combinando criatividade e soluções inovadoras para resolver problemas complexos. Sempre em busca de evolução, estou comprometido em contribuir para projetos e equipes de maneira eficiente, agregando valor e promovendo resultados tangíveis. Meu compromisso é atuar com dedicação e adaptabilidade, sempre em busca da excelência no desenvolvimento de soluções.</p>
+            <a href="Currículo/Currículo-Gabriel.pdf" target="_blank" class="btn">Ler mais</a> <!-- Class btn -->
+        </div> <!-- Class /about-content -->
+    </section> <!-- Class about | ID about -->
+
+    <!----------------------------------------------------------------------------------------->
+
+    <!-- services section design -->
+    <section class="services" id="services"> <!-- Class services | Id services -->
+    <h2 class="heading">Meus <span>Cursos</span></h2>
+
+    <div class="services-container">
+        <div class="services-box">
+            <i class="fa-solid fa-certificate"></i>
+            <h3>FAETEC</h3>
+            <p></p>
+            <a href="#" class="btn btn-curso" data-course="faetec">Ler mais</a>
+        </div>
+        <div class="services-box">
+            <i class="fa-solid fa-certificate"></i>
+            <h3>FIRJAN SENAI</h3>
+            <p></p>
+            <a href="#" class="btn btn-curso" data-course="firjan">Ler mais</a>
+        </div>
+        <div class="services-box">
+            <i class="fa-solid fa-certificate"></i>
+            <h3>DIO</h3>
+            <p></p>
+            <a href="#" class="btn btn-curso" data-course="dio">Ler mais</a>
+        </div>
+        <div class="services-box">
+            <i class="fa-solid fa-certificate"></i> 
+            <h3>CURSOEMVÍDEO</h3>
+            <p></p>
+            <a href="#" class="btn btn-curso" data-course="cursoemvideo">Ler mais</a>
+        </div>
+        <div class="services-box">
+            <i class="fa-solid fa-certificate"></i>
+            <h3>CURSAE</h3>
+            <p></p>
+            <a href="#" class="btn btn-curso" data-course="cursae">Ler mais</a>
+        </div>
+        <div class="services-box">
+            <i class="fa-solid fa-certificate"></i>
+            <h3>4LINUX</h3>
+            <p></p>
+            <a href="#" class="btn btn-curso" data-course="4linux">Ler mais</a>
+        </div>
+    </div>
+    </section>
+
+    <!-- portfolio section design -->
+    <section class="portfolio" id="portfolio"> <!-- Class portfolio | ID portfolio  -->
+        <h2 class="heading">Meu <span>Portfólio</span></h2> <!-- Class /heading -->
+
+        <div class="portfolio-container"> <!-- Class portfolio-container -->
+           
+
+            <!----------------------------------------------------------------------------------------->
+
+            <div class="portfolio-box"
+            data-title="Projeto Clima"
+            data-description="Este projeto permite que o usuário insira o nome de uma cidade e receba informações em tempo real sobre o clima local, incluindo temperatura atual, condições meteorológicas e uma imagem representativa da cidade. A aplicação combina dados de APIs de clima e imagens para oferecer uma experiência visual e informativa, ideal para quem deseja conhecer o clima e o visual de diferentes lugares do mundo de forma rápida e intuitiva."
+            data-link="https://clima-ht49.onrender.com/"
+            data-video="videos/Weather.mp4"
+            data-date="20 de Maio de 2025"
+            data-repo="https://github.com/ogabrieldias/clima"
+            data-linkedin="https://www.linkedin.com/feed/update/urn:li:activity:7334946998338342912/">
+        
+            <img src="imagens/Projeto-Clima.png" alt="Imagem do Projeto Social">
+            
+                <div class="portfolio-layer">
+                    <h4>Clima</h4>
+                    <div class="tech-icons">
+                        <i class="bx bxl-html5"></i>
+                        <i class="bx bxl-css3"></i>
+                        <i class="bx bxl-javascript"></i>
+                        <i class="bx bxl-python"></i>
+                        <i class="bx bxl-flask"></i>
+                    </div>
+                </div>
+                <div class="portfolio-footer">
+                    <span class="project-date">24 de Maio de 2025</span>
+                    <a href="https://clima-ht49.onrender.com/" target="_blank" class="view-more">Ver mais</a>
+                </div>
+            </div>
+
+            <!----------------------------------------------------------------------------------------->
+
+            <div class="portfolio-box"
+            data-title="Projeto Android"
+            data-description="Projeto que simula um site Android com efeito moderno."
+            data-link="https://ogabrieldias.github.io/android/"
+            data-video="videos/Android.mp4"
+            data-date="10 de Maio de 2025"
+            data-repo="https://github.com/ogabrieldias/android"
+            data-linkedin="www.linkedin.com/in/ogabrieldias">
+        
+            <img src="imagens/Projeto-android.png" alt="Imagem do Projeto Android">
+            
+                <div class="portfolio-layer">
+                    <h4>Android</h4>
+                    <div class="tech-icons">
+                        <i class="bx bxl-html5"></i>
+                        <i class="bx bxl-css3"></i>
+                    </div>
+                </div>
+
+                <div class="portfolio-footer">
+                    <span class="project-date">24 de Maio de 2025</span>
+                    <a href="https://ogabrieldias.github.io/paralax-effect/" target="_blank" class="view-more">Ver mais</a>
+                </div>
+            </div>
+
+            <!----------------------------------------------------------------------------------------->
+
+            <div class="portfolio-box"
+            data-title="Projeto Login"
+            data-description="Projeto de tela de login moderna com animações CSS."
+            data-link="https://ogabrieldias.github.io/projeto-login/"
+            data-video="videos/Login.mp4"
+            data-date="15 de Maio de 2025"
+            data-repo="https://github.com/ogabrieldias/projeto-login"
+            data-linkedin="www.linkedin.com/in/ogabrieldias">
+        
+            <img src="imagens/Projeto-login.png" alt="Imagem do Projeto Login">
+            
+                <div class="portfolio-layer">
+                    <h4>Login</h4>
+                    <div class="tech-icons">
+                        <i class="bx bxl-html5"></i>
+                        <i class="bx bxl-css3"></i>
+                    </div>
+                </div>
+                <div class="portfolio-footer">
+                    <span class="project-date">24 de Maio de 2025</span>
+                    <a href="https://ogabrieldias.github.io/paralax-effect/" target="_blank" class="view-more">Ver mais</a>
+                </div>
+            </div>
+
+            <!----------------------------------------------------------------------------------------->
+           
+            <div class="portfolio-box"
+            data-title="Projeto Social"
+            data-description="Página social com layout responsivo e botões animados."
+            data-link="https://ogabrieldias.github.io/projeto-social/"
+            data-video="videos/Social.mp4"
+            data-date="20 de Maio de 2025"
+            data-repo="https://github.com/ogabrieldias/projeto-social"
+            data-linkedin="www.linkedin.com/in/ogabrieldias">
+        
+            <img src="imagens/Projeto-social.png" alt="Imagem do Projeto Social">
+            
+                <div class="portfolio-layer">
+                    <h4>Social</h4>
+                    <div class="tech-icons">
+                        <i class="bx bxl-html5"></i>
+                        <i class="bx bxl-css3"></i>
+                    </div>
+                </div>
+                <div class="portfolio-footer">
+                    <span class="project-date">24 de Maio de 2025</span>
+                    <a href="https://ogabrieldias.github.io/paralax-effect/" target="_blank" class="view-more">Ver mais</a>
+                </div>
+            </div>
+
+            <!----------------------------------------------------------------------------------------->
+
+            <div class="portfolio-box"
+            data-title="Projeto Em Breve"
+            data-description="Este projeto está em desenvolvimento e será lançado em breve. Fique atento para mais atualizações!"
+            data-link=""
+            data-video=""
+            data-date=""
+            data-repo=""
+            data-linkedin="">
+        
+            <img src="imagens/background-em-breve.jpeg" alt="Imagem do Projeto Social">
+            
+                <div class="portfolio-layer">
+                    <h4>Em breve</h4>
+                    <div class="tech-icons">
+                        <i class="bx bxl-html5"></i>
+                        <i class="bx bxl-css3"></i>
+                        <i class="bx bxl-javascript"></i>
+                    </div>
+                </div>
+                <div class="portfolio-footer">
+                    <span class="project-date">Em breve</span>
+                    <a href="https://ogabrieldias.github.io/paralax-effect/" target="_blank" class="view-more">Ver mais</a>
+                </div>
+            </div>      
+        </div> <!-- /Class portfolio-container -->
+    </section> <!-- /Class portfolio | ID portfolio  -->
+
+            <!----------------------------------------------------------------------------------------->
+
+    <!-- testimonial design -->
+    <div class="testimonial-container"> <!-- Class testimonial-container -->
+        <h2 class="heading">Depoimentos <span>valiosos</span></h2> <!-- Class /heading -->
+
+        <div class="testimonial-wrapper"> <!-- Class testimonial-wraper -->
+            <div class="testimonial-box mySwiper"> <!-- Class testimonial-box | Class mySwiper -->
+                <div class="testimonial-content swiper-wrapper"> <!-- Class testimonial-content | Class swiper-wrapper -->
+                    <div class="testimonial-slide swiper-slide"> <!-- Class testimonial-slide | Class swiper-slide -->
+                        <img src="https://cdn3d.iconscout.com/3d/premium/thumb/homem-de-cabelo-curto-com-barba-6528390-5823071.png" alt="">
+                        <h3>Carlos Silva</h3>
+                        <p>Excelente profissional! Sempre ágil e eficiente, resolveu todos os problemas técnicos rapidamente, garantindo o bom funcionamento dos sistemas. Recomendo totalmente!</p>
+                    </div> <!-- Class /testimonial-slide | Class /swiper-slide -->
+
+                    <div class="testimonial-slide swiper-slide"> <!-- Class testimonial-slide | Class swiper-slide -->
+                        <img src="https://cdn.icon-icons.com/icons2/3545/PNG/512/female_accounts_avatars_hair_long_earrings_necklace_geek_nerd_glasses_woman_icon_224666.png" alt="">
+                        <h3>Ana Pereira</h3>
+                        <p>Trabalhei com ele em diversas funções logísticas e sempre demonstrou organização e comprometimento. Suas soluções foram fundamentais para a eficiência das operações.</p>
+                    </div> <!-- Class /testimonial-slide | Class /swiper-slide -->
+
+                    <div class="testimonial-slide swiper-slide"> <!-- Class testimonial-slide | Class swiper-slide -->
+                        <img src="https://cdn3d.iconscout.com/3d/premium/thumb/avatar-homem-de-oculos-10253511-8330266.png" alt="">
+                        <h3>Marcos Oliveira</h3>
+                        <p>Um assistente administrativo incrível! Sempre atencioso e proativo, ajudou a manter tudo em ordem e colaborou para o bom andamento das tarefas diárias.</p>
+                    </div> <!-- Class /testimonial-slide | Class /swiper-slide -->
+
+                    <div class="testimonial-slide swiper-slide"> <!-- Class testimonial-slide | Class swiper-slide -->
+                        <img src="https://cdn3d.iconscout.com/3d/premium/thumb/avatar-homem-de-chapeu-10253512-8330267.png" alt="">
+                        <h3>Roberto Souza</h3>
+                        <p>Profissional versátil e dedicado! Seja no suporte técnico, logística ou administração, ele sempre entregou resultados de alta qualidade. Uma pessoa confiável e muito capacitada.</p>
+                    </div> <!-- Class /testimonial-slide | Class /swiper-slide -->
+                </div> <!-- Class /testimonial-content | Class /swiper-wrapper -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div> <!-- Class /testimonial-box | /Class mySwiper -->
+        </div> <!-- Class /testimonial-wraper -->
+    </div> <!-- Class /testimonial-container -->
+
+    <!----------------------------------------------------------------------------------------->
+
+    <!-- contact section design -->
+    <section class="contact" id="contact"> <!-- Class contact | ID contact -->
+        <h2 class="heading">Entre em contato <span>Comigo!</span></h2> <!-- Class /heading -->
+        <div class="container_contato">
+            <div class="contato-item">
+                <a href="mailto:gabrieldiass707@gmail.com">
+                    <div class="icone">
+                        <i class="bx bx-envelope"></i>
+                    </div>
+                    <h3>E-mail</h3>
+                    <p>gabrieldiass707@gmail.com</p>
+                </a>
+            </div>
+
+            <div class="contato-item">
+                <a href="https://wa.me/5524998558044" target="_blank">
+                    <div class="icone">
+                        <i class="bx bx-phone"></i>
+                    </div>
+                    <h3>Telefone</h3>
+                    <p>(24) 99855–8044</p>
+                </a>
+            </div>
+
+            <div class="contato-item">
+                <a href="https://www.linkedin.com/in/ogabrieldias/" target="_blank">
+                    <div class="icone">
+                            <i class="bx bxl-linkedin"></i>
+                    </div>
+                    <h3>Linkedin</h3>
+                    <p>@ogabrieldias</p>
+                </a>
+            </div>
+
+            <div class="contato-item">
+                <a href="https://github.com/ogabrieldias" target="_blank">
+                    <div class="icone">
+                        <i class="bx bxl-github"></i>
+                    </div>
+                    <h3>Github</h3>
+                    <p>@ogabrieldias</p>
+                </a>
+            </div>
+        </div>
+    </section> <!-- Class /contact | ID /contact -->
+        
+
+    <!-- footer design -->
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2024 by Gabriel Bernardino Dias | All rights Reserved</p>
+        </div>
+
+        <div class="footer-iconTop">
+            <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+        </div>
+    </footer>
+
+    <!-- Modal Cursos -->
+    <div class="modal-overlay" id="modalCursoOverlay"></div>
+    <div class="modal custom-modal" id="modalCurso">
+    <div class="custom-modal-content">
+        <h2 id="modalCursoTitulo"></h2>
+        <p id="modalCursoDescricao"></p>
+        <button id="closeModalCurso" class="btn">Fechar</button>
+    </div>
+    </div>
+
+</body>
+</html>
