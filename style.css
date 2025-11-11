@@ -12,13 +12,13 @@
 }
 
 :root {
-    --bg-color:rgb(188, 212, 214);
+    --bg-color:#F9FAFB; /* antes rgb(188, 212, 214) */
     --text-color: #333;
-    --main-color: #00FFF5;
+    --main-color: #2563EB; /* antes #00FFF5 */
     --white-color: #fdfdfd;
     --shadow-color: rgba(0, 0, 0, .2);
-    --cor-destaque: #00ADB5;
-    --color-title: #00FFF5;
+    --cor-destaque: #F20505; /* antes #00ADB5 */
+    --color-title: #2563EB; /* antes #00FFF5 */
     --gold-color: #D3AF37;
     
 }
@@ -34,11 +34,11 @@
 
 .dark-mode { /* (dark-mode2) */
     /*cor excluida: #393E46 */     
-    --bg-color: #222831;
+    --bg-color: #0e0e0e;
     --text-color: #fdfdfd;
     --shadow-color: rgba(0, 0, 0, .7);
-    --main-color: #00ADB5;
-    --cor-destaque: #00FFF5;
+    --main-color: #2563EB; /* antes #00ADB5 */
+    --cor-destaque: #F20505; /* antes #00FFF5 */
     --gold-color: #D3AF37;
 }
 
@@ -796,7 +796,7 @@ p {
 
 /* Estilo da data */
 .project-date {
-    color: black;
+    color: var(--cor-destaque);
     text-shadow: var(--gold-color) 0 0 10px;
     font-size: 14px;
 }
@@ -944,12 +944,28 @@ p {
 
 .icone i {
   font-size: 26px;
-  color: var(--main-color);
+  
   transition: transform 0.3s ease;
 }
 
 .contato-item:hover .icone i {
   transform: scale(1.2);
+}
+
+#email {
+    color: #BB001B;
+}
+
+#whatsapp {
+    color: #25d366;
+}
+
+#linkedin {
+    color: #0077B5;
+}
+
+#github {
+    color: #6E40C9;
 }
 
 .contato-item h3 {

@@ -249,23 +249,27 @@ Inteligentes
             <li>Segurança da Informação: Módulo 03</li>
             <li>Segurança da Informação: Módulo 04</li>
             <li>Redes de Computadores</li>
+            <li>Curso Prático de Redes de Computadores e Internet</li>
             <li>Curso de Endereçamento IPv4</li>
-            <li>HTML5 e CSS3: módulo 1 de 5</li>
+            <li>Python 3 – Mundo 1</li>
+            <li>Python 3 – Mundo 2</li>
+            <li>Python 3 – Mundo 3</li>
+            
           </ul>
         </div>
         <div class='cursos-coluna'>
           <ul>
+            <li>HTML5 e CSS3: módulo 1 de 5</li>
             <li>HTML5 e CSS3: módulo 2 de 5</li>
             <li>HTML5 e CSS3: módulo 3 de 5</li>
             <li>HTML5 e CSS3: módulo 4 de 5</li>
             <li>HTML5 e CSS3: módulo 5 de 5</li>
-            <li>Python 3 – Mundo 1</li>
-            <li>Python 3 – Mundo 2</li>
-            <li>Python 3 – Mundo 3</li>
+            <li>Algoritmo</li>
             <li>Javascript</li>
             <li>MySQL</li>
             <li>Git e GitHub</li>
             <li>Linux</li>
+            <li>Inglês - Módulo 01</li>
           </ul>
         </div>
       </div>`
@@ -276,7 +280,9 @@ Inteligentes
   },
   "4linux": {
     titulo: "4LINUX",
-    descricao: `701 - Linux Fundamentals`
+    descricao: `
+    701 - Linux Fundamentals
+    702 - Linux Essentials `
   }
 };
 
