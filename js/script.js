@@ -265,6 +265,7 @@ Inteligentes
             <li>HTML5 e CSS3: módulo 4 de 5</li>
             <li>HTML5 e CSS3: módulo 5 de 5</li>
             <li>Algoritmo</li>
+            <li>Hardware</li>
             <li>Javascript</li>
             <li>MySQL</li>
             <li>Git e GitHub</li>
