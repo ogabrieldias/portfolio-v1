@@ -78,15 +78,22 @@ html{
   display: flex;
 }
 
+html.modal-open,
+body.modal-open {
+  overflow: hidden;
+  height: 100%; /* garante que não haja rolagem */
+}
+
+
 body.modal-open {
     overflow: hidden;  
-    /* position: fixed;
-    width: 100%; */
 }
 
 .modal {
   flex-direction: column;
   width: 75%;
+  max-height: 80vh;       /* altura máxima da janela */
+  overflow-y: auto;       /* ativa rolagem interna */
   padding: 2.5rem;
   gap: 2.5rem;
   background-color: var(--bg-color);

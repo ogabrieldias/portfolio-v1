@@ -209,16 +209,6 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-
-
-
-
-
-
-
-
-
-// ...existing code...
 const cursos = {
   faetec: {
     titulo: "FAETEC",
