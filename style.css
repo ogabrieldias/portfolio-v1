@@ -14,6 +14,7 @@
 :root {
     --bg-color:#F9FAFB; 
     --bg-color-inverse:#0e0e0e; 
+    --bg-icone: #1f1f1f;
     --text-color: #333;
     --text-color-inverse: #fdfdfd;
     --main-color: #2563EB; 
@@ -29,6 +30,7 @@
     /*cor excluida: #393E46 */     
     --bg-color: #0e0e0e;
     --bg-color-inverse: #F9FAFB;
+    --bg-icone: #F9FAFB;
     --text-color: #fdfdfd;
     --text-color-inverse: #333;
     --shadow-color: rgba(0, 0, 0, .7);
@@ -99,7 +101,6 @@ body.modal-open {
 
 .modal .top {
   display: flex;
-  gap: 3.75rem;
 }
 
 .modal .top .video iframe {
@@ -716,7 +717,7 @@ Cursos em duas colunas
     opacity: 1;
 }
 
-.portfolio-layer h4 {
+.portfolio-layer h3 {
     font-size: 3rem;
 }
 
@@ -928,11 +929,17 @@ p {
     height: 60px;
     margin: 0 auto 10px;
     border-radius: 50%;
-    background: #1f1f1f;
+    border: 2px solid var(--text-color);
+    background: var(--bg-color);
     display: flex;
     align-items: center;
     justify-content: center;
     transition: 0.3s ease, transform 0.3s ease;
+}
+
+.icone:hover {
+    background: var(--bg-icone);
+    transform: rotate(360deg) scale(1.2);
 }
 
 .icone i {
@@ -1163,7 +1170,9 @@ p {
     }
     
     .video {
-        display: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     
     .home .home-content {
@@ -1485,6 +1494,11 @@ p {
     }
     .cursos-coluna {
         min-width: 0;
+    }
+
+    .modal .top .video iframe {
+        width: 35rem;
+        height: 20rem;
     }
 }
 
